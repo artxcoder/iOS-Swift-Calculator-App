@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ButtonCVCell" customModule="Calculator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="182" height="128"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7p6-ny-5PS">
+                    <rect key="frame" x="10" y="10" width="162" height="108"/>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="45"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="bg_button"/>
+            <constraints>
+                <constraint firstItem="7p6-ny-5PS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="AdQ-Cd-Og1"/>
+                <constraint firstItem="7p6-ny-5PS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="PwV-F1-L0f"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7p6-ny-5PS" secondAttribute="trailing" constant="10" id="pK9-hR-9kc"/>
+                <constraint firstItem="7p6-ny-5PS" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="q7M-fl-vkN"/>
+                <constraint firstAttribute="bottom" secondItem="7p6-ny-5PS" secondAttribute="bottom" constant="10" id="rAd-KZ-d1Q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblTitle" destination="7p6-ny-5PS" id="q1a-Ab-T8r"/>
+            </connections>
+            <point key="canvasLocation" x="-24.427480916030532" y="274.64788732394368"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="bg_button">
+            <color red="0.14901960784313725" green="0.15686274509803921" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

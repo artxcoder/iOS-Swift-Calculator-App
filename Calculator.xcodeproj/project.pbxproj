@@ -16,6 +16,13 @@
 		A3F54B6D2AFB6EB1003468EE /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F54B6C2AFB6EB1003468EE /* CalculatorTests.swift */; };
 		A3F54B772AFB6EB1003468EE /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F54B762AFB6EB1003468EE /* CalculatorUITests.swift */; };
 		A3F54B792AFB6EB1003468EE /* CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F54B782AFB6EB1003468EE /* CalculatorUITestsLaunchTests.swift */; };
+		A3F54B862AFBAAA9003468EE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F54B852AFBAAA9003468EE /* Colors.xcassets */; };
+		A3F54B8A2AFBAC5D003468EE /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3F54B892AFBAC5D003468EE /* Lato-Bold.ttf */; };
+		A3F54B8E2AFBBEFF003468EE /* ButtonCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3F54B8D2AFBBEFF003468EE /* ButtonCVCell.xib */; };
+		A3F54B902AFBBFB3003468EE /* ButtonCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F54B8F2AFBBFB3003468EE /* ButtonCVCell.swift */; };
+		A3F54B932AFBC0D5003468EE /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F54B922AFBC0D5003468EE /* Enums.swift */; };
+		A3F54B9A2AFBC573003468EE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F54B992AFBC573003468EE /* UIColor+Extension.swift */; };
+		A3F54B9C2AFBCA7B003468EE /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F54B9B2AFBCA7B003468EE /* CalculatorVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,14 @@
 		A3F54B722AFB6EB1003468EE /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F54B762AFB6EB1003468EE /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		A3F54B782AFB6EB1003468EE /* CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A3F54B852AFBAAA9003468EE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		A3F54B892AFBAC5D003468EE /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		A3F54B8D2AFBBEFF003468EE /* ButtonCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCVCell.xib; sourceTree = "<group>"; };
+		A3F54B8F2AFBBFB3003468EE /* ButtonCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCVCell.swift; sourceTree = "<group>"; };
+		A3F54B922AFBC0D5003468EE /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		A3F54B972AFBC362003468EE /* Queries.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Queries.md; sourceTree = "<group>"; };
+		A3F54B992AFBC573003468EE /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A3F54B9B2AFBCA7B003468EE /* CalculatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +114,17 @@
 		A3F54B542AFB6EAD003468EE /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				A3F54B872AFBAC30003468EE /* Fonts */,
 				A3F54B552AFB6EAD003468EE /* AppDelegate.swift */,
 				A3F54B572AFB6EAD003468EE /* SceneDelegate.swift */,
 				A3F54B592AFB6EAD003468EE /* ViewController.swift */,
-				A3F54B5B2AFB6EAD003468EE /* Main.storyboard */,
+				A3F54B912AFBC0BD003468EE /* Common */,
+				A3F54B8B2AFBBEB3003468EE /* Views */,
+				A3F54B982AFBC52D003468EE /* Extensions */,
 				A3F54B5E2AFB6EB0003468EE /* Assets.xcassets */,
+				A3F54B852AFBAAA9003468EE /* Colors.xcassets */,
 				A3F54B602AFB6EB0003468EE /* LaunchScreen.storyboard */,
+				A3F54B942AFBC2E9003468EE /* Docs */,
 				A3F54B632AFB6EB0003468EE /* Info.plist */,
 			);
 			path = Calculator;
@@ -125,6 +145,65 @@
 				A3F54B782AFB6EB1003468EE /* CalculatorUITestsLaunchTests.swift */,
 			);
 			path = CalculatorUITests;
+			sourceTree = "<group>";
+		};
+		A3F54B872AFBAC30003468EE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A3F54B882AFBAC3D003468EE /* Lato */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A3F54B882AFBAC3D003468EE /* Lato */ = {
+			isa = PBXGroup;
+			children = (
+				A3F54B892AFBAC5D003468EE /* Lato-Bold.ttf */,
+			);
+			path = Lato;
+			sourceTree = "<group>";
+		};
+		A3F54B8B2AFBBEB3003468EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3F54B5B2AFB6EAD003468EE /* Main.storyboard */,
+				A3F54B8C2AFBBECC003468EE /* CollectionViewCell */,
+				A3F54B9B2AFBCA7B003468EE /* CalculatorVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A3F54B8C2AFBBECC003468EE /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A3F54B8D2AFBBEFF003468EE /* ButtonCVCell.xib */,
+				A3F54B8F2AFBBFB3003468EE /* ButtonCVCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		A3F54B912AFBC0BD003468EE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A3F54B922AFBC0D5003468EE /* Enums.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A3F54B942AFBC2E9003468EE /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				A3F54B972AFBC362003468EE /* Queries.md */,
+			);
+			path = Docs;
+			sourceTree = "<group>";
+		};
+		A3F54B982AFBC52D003468EE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A3F54B992AFBC573003468EE /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +310,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F54B8E2AFBBEFF003468EE /* ButtonCVCell.xib in Resources */,
 				A3F54B622AFB6EB0003468EE /* LaunchScreen.storyboard in Resources */,
+				A3F54B8A2AFBAC5D003468EE /* Lato-Bold.ttf in Resources */,
+				A3F54B862AFBAAA9003468EE /* Colors.xcassets in Resources */,
 				A3F54B5F2AFB6EB0003468EE /* Assets.xcassets in Resources */,
 				A3F54B5D2AFB6EAD003468EE /* Main.storyboard in Resources */,
 			);
@@ -260,6 +342,10 @@
 			files = (
 				A3F54B5A2AFB6EAD003468EE /* ViewController.swift in Sources */,
 				A3F54B562AFB6EAD003468EE /* AppDelegate.swift in Sources */,
+				A3F54B932AFBC0D5003468EE /* Enums.swift in Sources */,
+				A3F54B9A2AFBC573003468EE /* UIColor+Extension.swift in Sources */,
+				A3F54B902AFBBFB3003468EE /* ButtonCVCell.swift in Sources */,
+				A3F54B9C2AFBCA7B003468EE /* CalculatorVC.swift in Sources */,
 				A3F54B582AFB6EAD003468EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,8 +526,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = B88C48V3QY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -449,13 +538,16 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.qubicle.test.Calculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qubicle.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = test_dev;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -467,8 +559,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = B88C48V3QY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -476,13 +571,16 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.qubicle.test.Calculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qubicle.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = test_dev;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
