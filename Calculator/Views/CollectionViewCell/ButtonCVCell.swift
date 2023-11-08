@@ -17,33 +17,30 @@ class ButtonCVCell: UICollectionViewCell {
     
     @IBOutlet weak var lblTitle: UILabel!
     
-    var title: String
-    var type: ButtonType
-    
-    init?(title: String, type: ButtonType) {
-        self.title = title
-        self.type = type
-        super.init(coder: NSCoder())
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func loadButton(withTitle title: String, andType buttonType: ButtonType) {
-        lblTitle.text = title
+    func loadButton(type: KeyPadButton) {
+        var lblTitleText: String?
+        var lblTintColor: UIColor?
         
-        var lblTintColor: UIColor!
-        
-        switch buttonType {
-        case .allClear:
+        switch type {
+        case .allClear(let title):
+            lblTitleText = title
             lblTintColor = .tint_fontRed
-        case .number:
+        case .number(let title):
+            lblTitleText = title
             lblTintColor = .tint_fontWhite
-        case .operand:
+        case .operand(let title):
+            lblTitleText = title
             lblTintColor = .tint_fontRed
+        case .invalid:
+            lblTitleText = nil
+            lblTintColor = nil
         }
-        
-        lblTitle.textColor = lblTintColor
+        //lblTitle.text = lblTitleText ?? kCalAlertText.invalidValue
+        //lblTitle.textColor = lblTintColor ?? .alert_invalid
     }
 }

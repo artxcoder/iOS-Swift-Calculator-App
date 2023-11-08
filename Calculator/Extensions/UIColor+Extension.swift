@@ -13,4 +13,6 @@ extension UIColor {
     static let tint_fontGreen = UIColor(named: "tint_fontGreen")
     static let tint_fontRed = UIColor(named: "tint_fontRed")
     static let tint_fontWhite = UIColor(named: "tint_fontWhite")
+    static let alert_invalid = UIColor(named: "alert_invalid")
 }
+
