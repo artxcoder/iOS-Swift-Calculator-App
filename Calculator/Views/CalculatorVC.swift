@@ -44,6 +44,21 @@ class CalculatorVC: UIViewController {
         }
     }
     
+    var error: CalError? {
+        willSet {
+            var alertText = "Error"
+            switch newValue {
+            case .divideByZero:
+                alertText = "Can't Divide By Zero"
+            case .unknown:
+                break
+            case .none:
+                break
+            }
+            resetAllValues()
+            lblTotal.text = alertText
+        }
+    }
 //    var total: Int? {
 //        willSet {
 //            //? 'didSet' cannot be provided together with a getter, why can't i add get {} with will/didSet
@@ -85,8 +100,7 @@ class CalculatorVC: UIViewController {
     
     func resetAllValues() {
         num1 = nil
-        num2 = nil 
-        //total = nil
+        num2 = nil
         currentOp = nil
     }
     
@@ -99,7 +113,7 @@ class CalculatorVC: UIViewController {
         case "x":
             return num1 * num2
         case "/":
-            return num1 / num2
+            return num1 > 0 && num2 > 0 ? num1 / num2 : nil
         default:
             break
         }
@@ -126,10 +140,16 @@ extension CalculatorVC: UICollectionViewDelegate {
             }
         case .operand(let opValue):
             
-            if let value1 = num1, let value2 = num2,
-                let result = calculate(num1: value1, num2: value2, op: currentOp!) {
-                resetAllValues()
-                num1 = result
+            if let value1 = num1, let value2 = num2 {
+                if let result = calculate(num1: value1, num2: value2, op: currentOp!) {
+                    resetAllValues()
+                    num1 = result
+                }
+                else {
+                    //error result
+                    error = .divideByZero
+                    return
+                }
             }
             else if num1 == nil && num2 == nil {
                 //no values in num1 and num2

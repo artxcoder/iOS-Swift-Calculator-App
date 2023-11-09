@@ -32,6 +32,11 @@ enum KeyPadButton {
     }
 }
 
+enum CalError: Error {
+    case divideByZero
+    case unknown
+}
+
 //For IBInspectables, to set masked corners
 enum CornerMaskType {
     case all, topLeftRight
