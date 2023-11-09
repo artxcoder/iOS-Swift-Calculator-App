@@ -31,3 +31,8 @@ enum KeyPadButton {
         }
     }
 }
+
+//For IBInspectables, to set masked corners
+enum CornerMaskType {
+    case all, topLeftRight
+}

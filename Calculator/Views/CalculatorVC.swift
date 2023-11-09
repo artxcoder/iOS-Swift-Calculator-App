@@ -18,17 +18,25 @@ class CalculatorVC: UIViewController {
     let kMinimumItemSpacing:CGFloat = 2
     let kNumberOfItemsInRow = 4
     let kNumberOfItemsInColumn = 4
-    let kDefaultTotalString = "0"
     
     lazy var keyPadButtons: [KeyPadButton] = [
         KeyPadButton(title: "7"),KeyPadButton(title: "8"),KeyPadButton(title: "9"), KeyPadButton(title: "x"),
         KeyPadButton(title: "4"), KeyPadButton(title: "5"), KeyPadButton(title: "6"), KeyPadButton(title: "/"),
         KeyPadButton(title: "1"), KeyPadButton(title: "2"), KeyPadButton(title: "3"), KeyPadButton(title: "-"),
-        KeyPadButton(title: "ac"), KeyPadButton(title: "0"), KeyPadButton(title: "="), KeyPadButton(title: "x")
+        KeyPadButton(title: "ac"), KeyPadButton(title: "0"), KeyPadButton(title: "="), KeyPadButton(title: "+")
     ]
     
     //VARIABLES
-    var num1, num2: Int?
+    var num1: Int? {
+        willSet {
+            lblTotal.text = "\(newValue ?? 0)"
+        }
+    }
+    var num2: Int? {
+        willSet {
+            lblTotal.text = "\(newValue ?? 0)"
+        }
+    }
     
     var currentOp: String? {
         willSet {
@@ -36,13 +44,13 @@ class CalculatorVC: UIViewController {
         }
     }
     
-    var total: String? {
-        willSet {
-            //? 'didSet' cannot be provided together with a getter, why can't i add get {} with will/didSet
-            //? why cant i convert String(newValue) here?
-            self.lblTotal.text = newValue ?? kDefaultTotalString
-        }
-    }
+//    var total: Int? {
+//        willSet {
+//            //? 'didSet' cannot be provided together with a getter, why can't i add get {} with will/didSet
+//            //? why cant i convert String(newValue) here?
+//            self.lblTotal.text = "\(newValue ?? 0)"
+//        }
+//    }
     
     
     override func viewDidLoad() {
@@ -78,8 +86,24 @@ class CalculatorVC: UIViewController {
     func resetAllValues() {
         num1 = nil
         num2 = nil 
-        total = nil
+        //total = nil
         currentOp = nil
+    }
+    
+    func calculate(num1: Int, num2: Int, op: String) -> Int? {
+        switch op {
+        case "+":
+            return num1 + num2
+        case "-":
+            return num1 - num2
+        case "x":
+            return num1 * num2
+        case "/":
+            return num1 / num2
+        default:
+            break
+        }
+        return nil
     }
 }
 
@@ -90,12 +114,29 @@ extension CalculatorVC: UICollectionViewDelegate {
         
         switch pressedKeyPadButton {
         case .number(let value):
-            self.total = value
+            //convert value to integer for calculation
             if let valueInt = Int(value) {
-                
+                if currentOp == nil {
+                    //no operation pressed
+                    num1 = num1 == nil ? valueInt : String(num1!).count >= 8 ? num1 : (num1! * 10) + valueInt
+                }
+                else {
+                    num2 = num2 == nil ? valueInt : String(num2!).count >= 8 ? num2 : (num2! * 10) + valueInt
+                }
             }
-        case .operand(let value):
-            self.currentOp = value
+        case .operand(let opValue):
+            
+            if let value1 = num1, let value2 = num2,
+                let result = calculate(num1: value1, num2: value2, op: currentOp!) {
+                resetAllValues()
+                num1 = result
+            }
+            else if num1 == nil && num2 == nil {
+                //no values in num1 and num2
+                num1 = 0
+            }
+            currentOp = opValue
+            
         case .allClear(_):
             resetAllValues()
         default:

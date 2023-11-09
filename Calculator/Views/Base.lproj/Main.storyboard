@@ -55,6 +55,11 @@
                                     <constraint firstItem="4Tw-HZ-cM4" firstAttribute="height" secondItem="9g2-qp-T1V" secondAttribute="height" multiplier="0.815951" id="YMB-VF-6go"/>
                                     <constraint firstAttribute="trailing" secondItem="4Tw-HZ-cM4" secondAttribute="trailing" constant="20" id="jiB-oc-JXy"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsC-nP-f1H">
                                 <rect key="frame" x="335.66666666666669" y="198" width="37.333333333333314" height="77"/>

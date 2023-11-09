@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3EC61AF2AFCCA26001AC2D8 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC61AE2AFCCA26001AC2D8 /* UIView+Extension.swift */; };
 		A3F54B562AFB6EAD003468EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F54B552AFB6EAD003468EE /* AppDelegate.swift */; };
 		A3F54B582AFB6EAD003468EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F54B572AFB6EAD003468EE /* SceneDelegate.swift */; };
 		A3F54B5A2AFB6EAD003468EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F54B592AFB6EAD003468EE /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3EC61AE2AFCCA26001AC2D8 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A3F54B522AFB6EAD003468EE /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F54B552AFB6EAD003468EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3F54B572AFB6EAD003468EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			children = (
 				A3F54B992AFBC573003468EE /* UIColor+Extension.swift */,
 				A3F54B9D2AFBCCE7003468EE /* CVCell+Extension.swift */,
+				A3EC61AE2AFCCA26001AC2D8 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				A3F54B902AFBBFB3003468EE /* ButtonCVCell.swift in Sources */,
 				A3F54B9C2AFBCA7B003468EE /* CalculatorVC.swift in Sources */,
 				A3F54B582AFB6EAD003468EE /* SceneDelegate.swift in Sources */,
+				A3EC61AF2AFCCA26001AC2D8 /* UIView+Extension.swift in Sources */,
 				A3F54BA02AFBD49D003468EE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
