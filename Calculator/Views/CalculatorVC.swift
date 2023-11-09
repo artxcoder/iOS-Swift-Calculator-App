@@ -9,6 +9,8 @@ import UIKit
 
 class CalculatorVC: UIViewController {
     
+    @IBOutlet weak var lblOperator: UILabel!
+    @IBOutlet weak var lblTotal: UILabel!
     @IBOutlet weak var keypadCV: UICollectionView!
     
     //CONSTANTS
@@ -16,6 +18,7 @@ class CalculatorVC: UIViewController {
     let kMinimumItemSpacing:CGFloat = 2
     let kNumberOfItemsInRow = 4
     let kNumberOfItemsInColumn = 4
+    let kDefaultTotalString = "0"
     
     lazy var keyPadButtons: [KeyPadButton] = [
         KeyPadButton(title: "7"),KeyPadButton(title: "8"),KeyPadButton(title: "9"), KeyPadButton(title: "x"),
@@ -24,12 +27,30 @@ class CalculatorVC: UIViewController {
         KeyPadButton(title: "ac"), KeyPadButton(title: "0"), KeyPadButton(title: "="), KeyPadButton(title: "x")
     ]
     
+    //VARIABLES
+    var num1, num2: Int?
+    
+    var currentOp: String? {
+        willSet {
+            lblOperator.text = newValue
+        }
+    }
+    
+    var total: String? {
+        willSet {
+            //? 'didSet' cannot be provided together with a getter, why can't i add get {} with will/didSet
+            //? why cant i convert String(newValue) here?
+            self.lblTotal.text = newValue ?? kDefaultTotalString
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         customiseCV()
         configCV()
+        resetAllValues()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,12 +74,34 @@ class CalculatorVC: UIViewController {
         //this makes calling size for item delegate
         keypadCV.collectionViewLayout = keypadCVFlowLayout
     }
+    
+    func resetAllValues() {
+        num1 = nil
+        num2 = nil 
+        total = nil
+        currentOp = nil
+    }
 }
 
 extension CalculatorVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         //keypad pressed
         let pressedKeyPadButton = keyPadButtons[indexPath.row]
+        
+        switch pressedKeyPadButton {
+        case .number(let value):
+            self.total = value
+            if let valueInt = Int(value) {
+                
+            }
+        case .operand(let value):
+            self.currentOp = value
+        case .allClear(_):
+            resetAllValues()
+        default:
+            break
+        }
+        
     }
     
     

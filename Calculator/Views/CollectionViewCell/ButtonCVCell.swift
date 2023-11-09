@@ -29,7 +29,7 @@ class ButtonCVCell: UICollectionViewCell {
         switch type {
         case .allClear(let title):
             lblTitleText = title
-            lblTintColor = .tint_fontRed
+            lblTintColor = .tint_fontGreen
         case .number(let title):
             lblTitleText = title
             lblTintColor = .tint_fontWhite
