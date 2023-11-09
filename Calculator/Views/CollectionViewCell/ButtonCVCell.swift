@@ -40,7 +40,11 @@ class ButtonCVCell: UICollectionViewCell {
             lblTitleText = nil
             lblTintColor = nil
         }
-        //lblTitle.text = lblTitleText ?? kCalAlertText.invalidValue
-        //lblTitle.textColor = lblTintColor ?? .alert_invalid
+        //showing as nil when nib file was not loaded
+        //only class was loaded and not nib
+        //everything is modular
+        //register cell is used to connect both
+        lblTitle.text = lblTitleText ?? kCalAlertText.invalidValue
+        lblTitle.textColor = lblTintColor ?? .alert_invalid
     }
 }

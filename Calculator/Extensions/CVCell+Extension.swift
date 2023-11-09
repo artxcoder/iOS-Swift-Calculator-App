@@ -8,9 +8,16 @@
 import UIKit
 
 extension UICollectionViewCell {
+    static var nib: UINib {
+        get {
+            return UINib(nibName: self.identifier, bundle: nil)
+        }
+    }
+    
     static var identifier: String {
         get {
             return String(describing: self)
         }
     }
+    
 }

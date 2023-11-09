@@ -25,8 +25,6 @@
 		A3F54B9C2AFBCA7B003468EE /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F54B9B2AFBCA7B003468EE /* CalculatorVC.swift */; };
 		A3F54B9E2AFBCCE7003468EE /* CVCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F54B9D2AFBCCE7003468EE /* CVCell+Extension.swift */; };
 		A3F54BA02AFBD49D003468EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F54B9F2AFBD49D003468EE /* Constants.swift */; };
-		A3F54BAB2AFBDE03003468EE /* ButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F54BA92AFBDE03003468EE /* ButtonCollectionViewCell.swift */; };
-		A3F54BAC2AFBDE03003468EE /* ButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3F54BAA2AFBDE03003468EE /* ButtonCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +68,6 @@
 		A3F54B9B2AFBCA7B003468EE /* CalculatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorVC.swift; sourceTree = "<group>"; };
 		A3F54B9D2AFBCCE7003468EE /* CVCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVCell+Extension.swift"; sourceTree = "<group>"; };
 		A3F54B9F2AFBD49D003468EE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		A3F54BA92AFBDE03003468EE /* ButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewCell.swift; sourceTree = "<group>"; };
-		A3F54BAA2AFBDE03003468EE /* ButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,8 +182,6 @@
 			children = (
 				A3F54B8D2AFBBEFF003468EE /* ButtonCVCell.xib */,
 				A3F54B8F2AFBBFB3003468EE /* ButtonCVCell.swift */,
-				A3F54BA92AFBDE03003468EE /* ButtonCollectionViewCell.swift */,
-				A3F54BAA2AFBDE03003468EE /* ButtonCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -322,7 +316,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3F54BAC2AFBDE03003468EE /* ButtonCollectionViewCell.xib in Resources */,
 				A3F54B8E2AFBBEFF003468EE /* ButtonCVCell.xib in Resources */,
 				A3F54B622AFB6EB0003468EE /* LaunchScreen.storyboard in Resources */,
 				A3F54B8A2AFBAC5D003468EE /* Lato-Bold.ttf in Resources */,
@@ -361,7 +354,6 @@
 				A3F54B902AFBBFB3003468EE /* ButtonCVCell.swift in Sources */,
 				A3F54B9C2AFBCA7B003468EE /* CalculatorVC.swift in Sources */,
 				A3F54B582AFB6EAD003468EE /* SceneDelegate.swift in Sources */,
-				A3F54BAB2AFBDE03003468EE /* ButtonCollectionViewCell.swift in Sources */,
 				A3F54BA02AFBD49D003468EE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
