@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -25,10 +25,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9g2-qp-T1V">
-                                <rect key="frame" x="0.0" y="225" width="393" height="627"/>
+                                <rect key="frame" x="0.0" y="400" width="393" height="452"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Tw-HZ-cM4">
-                                        <rect key="frame" x="20" y="57.666666666666657" width="353" height="511.66666666666674"/>
+                                        <rect key="frame" x="20" y="41.666666666666686" width="353" height="368.66666666666669"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HJq-Op-9Ue">
                                             <size key="itemSize" width="128" height="128"/>
@@ -53,6 +53,7 @@
                                     <constraint firstItem="4Tw-HZ-cM4" firstAttribute="leading" secondItem="9g2-qp-T1V" secondAttribute="leading" constant="20" id="9gr-8h-S6x"/>
                                     <constraint firstItem="4Tw-HZ-cM4" firstAttribute="centerY" secondItem="9g2-qp-T1V" secondAttribute="centerY" id="Lmo-z9-eos"/>
                                     <constraint firstItem="4Tw-HZ-cM4" firstAttribute="height" secondItem="9g2-qp-T1V" secondAttribute="height" multiplier="0.815951" id="YMB-VF-6go"/>
+                                    <constraint firstAttribute="width" secondItem="9g2-qp-T1V" secondAttribute="height" multiplier="1:1.15" id="fED-eg-aUU"/>
                                     <constraint firstAttribute="trailing" secondItem="4Tw-HZ-cM4" secondAttribute="trailing" constant="20" id="jiB-oc-JXy"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -62,13 +63,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsC-nP-f1H">
-                                <rect key="frame" x="335.66666666666669" y="118" width="37.333333333333314" height="77"/>
+                                <rect key="frame" x="335.66666666666669" y="293" width="37.333333333333314" height="77"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="64"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFq-zH-sID">
-                                <rect key="frame" x="351.33333333333331" y="88" width="16.666666666666686" height="25"/>
+                                <rect key="frame" x="351.33333333333331" y="263" width="16.666666666666686" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="VlS-fU-3KA"/>
                                 </constraints>
@@ -87,7 +88,6 @@
                             <constraint firstAttribute="bottom" secondItem="9g2-qp-T1V" secondAttribute="bottom" id="g5C-sL-3pO"/>
                             <constraint firstItem="9g2-qp-T1V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mIL-yq-hSQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dsC-nP-f1H" secondAttribute="trailing" constant="20" id="q5H-nb-ELi"/>
-                            <constraint firstItem="9g2-qp-T1V" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="100" id="scP-JM-Pey"/>
                             <constraint firstItem="9g2-qp-T1V" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xt5-vm-mUw"/>
                         </constraints>
                     </view>

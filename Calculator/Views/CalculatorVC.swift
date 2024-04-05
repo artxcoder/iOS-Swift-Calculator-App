@@ -134,6 +134,10 @@ extension CalculatorVC: UICollectionViewDelegate {
                     //no operation pressed
                     num1 = num1 == nil ? valueInt : String(num1!).count >= 8 ? num1 : (num1! * 10) + valueInt
                 }
+                else if currentOp == "=" {
+                    resetAllValues()
+                    num1 = valueInt
+                }
                 else {
                     num2 = num2 == nil ? valueInt : String(num2!).count >= 8 ? num2 : (num2! * 10) + valueInt
                 }
