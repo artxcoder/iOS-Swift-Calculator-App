@@ -7,8 +7,9 @@ This iOS calculator application provides basic arithmetic operations such as add
 This project is a hobby project developed with designing done on Figma. You can find the Figma design file in the `UI` directory.
 
 ## Screenshots
-
+<div align="center">
 <img src="Screenshots/Screenshot_iPhone_15.png" alt="Screenshot 1" width="178" height="300">
+</div>
 
 ## Features
 
