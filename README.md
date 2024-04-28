@@ -1,22 +1,37 @@
-# Introduction
+# iOS Calculator App
 
-This is a template for getting started with iOS development using GitLab and [fastlane](https://fastlane.tools/).
+## Overview
 
-# Reference links
+This iOS calculator application provides basic arithmetic operations such as addition, subtraction, multiplication, and division. It is designed with a user-friendly interface for easy usability. 
 
-- [GitLab CI Documentation](https://docs.gitlab.com/ee/ci/)
-- [Blog post: Android publishing with iOS and fastlane](https://about.gitlab.com/2019/03/06/ios-publishing-with-gitlab-and-fastlane/)
+This project is a hobby project developed with designing done on Figma. You can find the Figma design file in the `UI` directory.
 
-# Getting started
+## Screenshots
 
-You'll need a working MacOS development environment with XCode 10 to use this
-template. You can find instructions to get up and running on the Apple [XCode website](https://developer.apple.com/xcode/).
+<img src="Screenshots/Screenshot_iPhone_15.png" alt="Screenshot 1" width="238" height="400">
 
-If you want to use GitLab CI with your own MacOS runners (a requirement since we
-do not currently yet offer shared MacOS runners - follow [infrastructure#5294](https://gitlab.com/gitlab-com/gl-infra/infrastructure/issues/5294) for
-updates on that front) please read through the blog post above which will walk 
-you through everything you need to get up and running.
+## Features
 
-## What's contained in this project
+- **Basic Arithmetic Operations:** Perform addition, subtraction, multiplication, and division.
+- **Clear Button:** Clear the input and start a new calculation.
+- **Error Handling:** Display error messages for invalid operations such as division by zero.
+- **Responsive Design:** Adapted for various screen sizes, including iPhones and iPads.
 
-This template contains a simple Food Tracker App based off of the [Start Developing iOS Apps (Swift) Lessons](https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html). Where necessary the template has been upgraded to use Swift 4. The app displays a list of meals consisting of a name, rating, and photo. Users are able to add or edit a meal by navigating to a detail screen. The app also includes a lightweight solution for basic data persistence.
+## Getting started
+
+You'll need a working MacOS development environment with XCode 10 to use this app. You can find instructions to get up and running on the Apple [XCode website](https://developer.apple.com/xcode/).
+
+## Usage
+
+1. Launch the application on your iOS device.
+2. Use the buttons to input numbers and perform calculations.
+3. Tap "=" to see the result.
+4. Tap "AC" to clear the input.
+
+## Testing
+
+The application includes XCTestCases to ensure the correctness of calculations. To run the tests, navigate to the CalculatorTests directory and run the test.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or create a pull request.
