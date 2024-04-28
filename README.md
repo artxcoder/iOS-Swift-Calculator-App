@@ -1,3 +1,5 @@
+# iOS Calculator App
+
 # Introduction
 
 This is a template for getting started with iOS development using GitLab and [fastlane](https://fastlane.tools/).
