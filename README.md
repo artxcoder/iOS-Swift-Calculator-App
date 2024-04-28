@@ -8,8 +8,7 @@ This project is a hobby project developed with designing done on Figma.
 
 ## Screenshots
 
-![Screenshot 1](Screenshots/Screenshot_iPhone_15.png)
-
+<img src="screenshots/screenshot1.png" alt="Screenshot 1" width="300" height="600">
 
 ## Features
 
