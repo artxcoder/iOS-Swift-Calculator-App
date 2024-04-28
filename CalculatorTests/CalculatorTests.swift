@@ -10,12 +10,34 @@ import XCTest
 
 final class CalculatorTests: XCTestCase {
 
+    var input1: Int!
+    var input2: Int!
+    var calc: CalculatorVC!
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        input1 = 5
+        input2 = 5
+        calc = CalculatorVC()
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+    }
+    
+    func testOperateOnTwoNumbers() throws {
+        let resultAdd = calc.calculate(num1: input1, num2: input2, op: "+")
+        XCTAssertEqual(resultAdd, 10)
+        
+        let resultSub = calc.calculate(num1: input1, num2: input2, op: "-")
+        XCTAssertEqual(resultSub, 0)
+        
+        let resultDiv = calc.calculate(num1: input1, num2: input2, op: "/")
+        XCTAssertEqual(resultDiv, 1)
+        
+        let resultMulti = calc.calculate(num1: input1, num2: input2, op: "x")
+        XCTAssertEqual(resultMulti, 25)
+        
     }
 
     func testExample() throws {
