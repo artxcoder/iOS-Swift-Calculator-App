@@ -2,7 +2,14 @@
 
 ## Overview
 
-This iOS calculator application provides basic arithmetic operations such as addition, subtraction, multiplication, and division. It is designed with a user-friendly interface for easy usability.
+This iOS calculator application provides basic arithmetic operations such as addition, subtraction, multiplication, and division. It is designed with a user-friendly interface for easy usability. 
+
+This project is a hobby project developed with designing done on Figma.
+
+## Screenshots
+
+![Screenshot 1](Screenshots/Screenshot_iPhone_15.png)
+
 
 ## Features
 
@@ -20,7 +27,7 @@ You'll need a working MacOS development environment with XCode 10 to use this ap
 1. Launch the application on your iOS device.
 2. Use the buttons to input numbers and perform calculations.
 3. Tap "=" to see the result.
-4. Tap "C" to clear the input.
+4. Tap "AC" to clear the input.
 
 ## Testing
 
