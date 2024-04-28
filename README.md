@@ -4,11 +4,11 @@
 
 This iOS calculator application provides basic arithmetic operations such as addition, subtraction, multiplication, and division. It is designed with a user-friendly interface for easy usability. 
 
-This project is a hobby project developed with designing done on Figma.
+This project is a hobby project developed with designing done on Figma. You can find the Figma design file in the `UI` directory.
 
 ## Screenshots
 
-<img src="screenshots/screenshot1.png" alt="Screenshot 1" width="300" height="600">
+<img src="Screenshots/Screenshot_iPhone_15.png" alt="Screenshot 1" width="178" height="300">
 
 ## Features
 
