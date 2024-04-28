@@ -15,17 +15,17 @@ This iOS calculator application provides basic arithmetic operations such as add
 
 You'll need a working MacOS development environment with XCode 10 to use this app. You can find instructions to get up and running on the Apple [XCode website](https://developer.apple.com/xcode/).
 
-##Usage
+## Usage
 
 1. Launch the application on your iOS device.
 2. Use the buttons to input numbers and perform calculations.
 3. Tap "=" to see the result.
 4. Tap "C" to clear the input.
 
-##Testing
+## Testing
 
 The application includes XCTestCases to ensure the correctness of calculations. To run the tests, navigate to the CalculatorTests directory and run the test.
 
-##Contributing
+## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or create a pull request.
